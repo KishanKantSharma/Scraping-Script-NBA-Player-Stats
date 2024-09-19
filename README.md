@@ -9,7 +9,7 @@ It uses the `requests` and `BeautifulSoup` libraries to extract data from the we
 Before running the script, make sure you have the necessary Python libraries installed. You can install them using `pip`:
 
 ```bash
-pip install requests beautifulsoup4
+pip install requests beautifulsoup4 
 ```
 
 ## Usage
@@ -21,10 +21,18 @@ pip install requests beautifulsoup4
 3. Run the script:
 
 ```bash
-python nba_player_stats_scraper.py
+python3 nba_player_stats_scraper.py
 ```
+ :: This Script will Scrape the Data from the BasketReference.com. Provide the Specific Year NBA Season Data you want..
 
-4. The script will fetch the data from the website and save it as a CSV file named `nba_player_stats_2021.csv`.
+4. The script will fetch the data from the website and save it as a CSV file named `nba_player_stats_{Year}.csv`.
+    File Dir: Project Directory Folder in Local. 
+
+5. Run the filter Script. This Script will filter the Scrapped Data CSV File and Fetch Specific Columns From it.. You can modify which columns you want in the filter Script.
+
+```bash
+python3 filterCSV.py
+```
 
 ## CSV File
 
